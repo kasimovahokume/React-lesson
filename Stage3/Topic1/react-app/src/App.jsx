@@ -1,28 +1,25 @@
-import "./App.css";
-import { Navbar } from "./Navbar";
+import "./styles/global.css";
+// import { Navbar } from "./Navbar";
+import  { Button } from './components/Button/Button';
+// import {Input} from './components/Input/Input';
+// import { Card } from "./components/Card"
+import { Profile } from "./components/Profile/Profile"
+import { List } from "./components/List/List"
+import Products from "./components/Products/Products";
+import Container from "./components/Container/Container";
+import ParentCompanents from "./components/Example/ParentCompanents";
+import { Header } from "./components/Header/Header";
+
+
+
 
 export function App() {
-  let a = 15;
-  const firstName = "hoku";
-
-  let vize1 = 60;
-  let vize2 = 80;
-
-  let sonuc = false;
 
   return (
-    // fragment
-    <div>
-      {/* <p>Ortalama :{(vize1 + vize2) / 2}</p> */}
-
-      {/* {sonuc ? (
-        <p>Ehliyyeti alabilirsin</p>
-      ) : (
-        <p>Ehliyyeti alamazsin, kaybol</p>
-      )} */}
-      {/* {(vize1 + vize2) / 2 >= 50 ? <p>Dersten gectin aferin</p> : <p>kaldin</p>} */}
-    </div>
+    <>
+    <Header/>
+    </>
   );
 }
 
-// export default App
+export default App

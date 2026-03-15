@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+.btn{
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 5px;
+}
+.btn:hover{
+    background-color: darkred;
+}
