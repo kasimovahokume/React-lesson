@@ -1,21 +1,19 @@
-import PropTypes from 'prop-types';
 
-export function UserCard({name, age, isOnline, onMessage}) {
-    return(
-        <div>
-            <h2>Ad: {name}</h2>
-            <p>Yas: {age}</p>
-            <p>Status: {isOnline ? "Online" : "Oflayn"}</p>
-            <button
-            onClick={()=>onMessage(name)}>
-            Mesaj yaz</button>
-        </div>
-    );
+
+import PropTypes from 'prop-types'
+
+export const UserCard = ({name, age, isOnline}) => {
+  return (
+    <div>
+      <p>{name}</p>
+      <p>{age}</p>
+      <p>{isOnline ? "Online" : "Oflayn"}</p>
+    </div>
+  )
 }
 
 UserCard.propTypes = {
     name: PropTypes.string.isRequired,
-    age: PropTypes.number,
-    isOnline: PropTypes.bool,
-    onMessage: PropTypes.func.isRequired
+    age: PropTypes.number.isRequired,
+    isOnline: PropTypes.bool.isRequired
 }

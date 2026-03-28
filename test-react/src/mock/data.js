@@ -1,6 +1,5 @@
-export const foods = [
-  { id: 1, name: "Pizza", price: 15, isAvailable: true },
-  { id: 2, name: "Burger", price: 10, isAvailable: false },
-  { id: 3, name: "Salad", price: 8, isAvailable: true },
-  { id: 4, name: "Sushi", price: 20, isAvailable: false },
-];
+export const movies = [
+  { "id": 1, "title": "Interstellar", "year": 2014, "rating": 9.0 },
+  { "id": 2, "title": "Inception", "year": 2010, "rating": 8.8 },
+  { "id": 3, "title": "The Dark Knight", "year": 2008, "rating": 9.0 }
+]

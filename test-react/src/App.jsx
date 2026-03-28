@@ -1,25 +1,47 @@
 import "./styles/global.css";
-import { Navbar } from "./Navbar";
-import  { Button } from './components/Button/Button';
-import { Profile } from "./components/Profile/Profile"
-import { List } from "./components/List/List"
-import Products from "./components/Products/Products";
-import Container from "./components/Container/Container";
-import { Header } from "./components/Header/Header";
-import {UserCard} from "./components/UserCard";
-import { foods } from "./mock/data";
-import { FoodCard } from "./components/FoodCard";
-import { ColorButton } from "./components/ColorButton";
-
-
+import { UserCard } from "./components/UserCard";
+import { useState } from "react";
+import { MovieCard } from "./components/MovieCard";
+import { CharCounter } from "./components/MirrorText";
 
 export function App() {
   
   return (
     <>
-    <Products/>
+    <CharCounter/>
     </>
   );
 }
 
-export default App
+export default App;
+
+// export function App() {
+
+//   const [count, setCount] = useState(0);
+
+//   const arttir = ()=>{
+//     setCount(count + 1)
+//   }
+//   const azalt = ()=>{
+//     if (count>0) {
+
+//       setCount(count - 1)
+//     }
+//   }
+//   console.log("compenet render edildi");
+//   return (
+//     <>
+//     <div>{count}</div>
+//     <div>
+//       <button onClick={arttir}>
+//         Arttir
+//       </button>
+//       <button onClick={azalt}>
+//         Azalt
+//       </button>
+//     </div>
+//     </>
+//   );
+// }
+
+// export default App
