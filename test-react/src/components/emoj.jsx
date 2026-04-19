@@ -1,8 +1,14 @@
 import { useState } from "react";
 
 export const TogglePassword =()=> {
-    return(
-        <div>
-        </div>
-    )
+   const [temperatur, setTemperatur] = useState("");
+
+   return(
+    <div>
+        <input 
+        type="text"
+         />
+         
+    </div>
+   )
   };

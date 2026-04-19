@@ -1,19 +1,11 @@
 
+import React, { useState } from "react";
 
-import PropTypes from 'prop-types'
-
-export const UserCard = ({name, age, isOnline}) => {
+const CounterButton = React.memo(({ onClick, label }) => {
+  console.log(`${label} düyməsi render olundu! `);
   return (
-    <div>
-      <p>{name}</p>
-      <p>{age}</p>
-      <p>{isOnline ? "Online" : "Oflayn"}</p>
-    </div>
-  )
-}
-
-UserCard.propTypes = {
-    name: PropTypes.string.isRequired,
-    age: PropTypes.number.isRequired,
-    isOnline: PropTypes.bool.isRequired
-}
+    <button onClick={onClick} style={{ margin: "10px" }}>
+      {label}
+    </button>
+  );
+});

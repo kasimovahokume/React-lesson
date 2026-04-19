@@ -1,15 +1,6 @@
+
+import { ReactHooks } from "./components/ReactHooks";
 import "./styles/global.css";
-import { UserCard } from "./components/UserCard";
-import { useState } from "react";
-import { MovieCard } from "./components/MovieCard";
-import {SecretInput} from "./components/MirrorText"
-import { GreetingNew } from "./components/GreetingNew";
-
-import AppNew from "./components/Greeting";
-import { RegisterForm } from "./components/Toogle";
-
-import { UserManagement } from "./components/Products/Products";
-import { TogglePassword } from "./components/emoj";
 
 
 
@@ -20,7 +11,9 @@ export function App() {
     {/* <ProductForm/> */}
     {/* <RegisterForm/> */}
     {/* <UserManagement/> */}
-    <TogglePassword/>
+    {/* <WindowTracker/> */}
+
+    <ReactHooks/>
     </>
   );
 }
